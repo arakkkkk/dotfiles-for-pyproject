@@ -4,6 +4,7 @@ sudo apt install -y \
   entr \
   fish \
   git \
+  xdotool \
   build-essential \
   libffi-dev \
   libssl-dev \
