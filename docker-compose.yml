@@ -4,5 +4,5 @@ services:
   dotfiles-test:
     image: ubuntu
     container_name: ubuntu_for_dotfiles_test
+    # command: "apt update && apt install -y curl && apt install -y sudo"
     tty: true
-    command: /bin/bash -c "apt update && apt install -y curl"
