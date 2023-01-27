@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  dotfiles-test:
+    image: ubuntu
+    container_name: ubuntu_for_dotfiles_test
+    tty: true
+    command: /bin/bash -c "apt update && apt install -y curl"
