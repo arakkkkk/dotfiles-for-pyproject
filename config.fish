@@ -1,5 +1,6 @@
 starship init fish | source
 
 # pyenv path
-status is-interactive; and pyenv init --path | source
+set -x PYENV_ROOT $HOME/.pyenv
+set -x PATH  $PYENV_ROOT/bin $PATH
 pyenv init - | source
