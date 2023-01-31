@@ -4,3 +4,7 @@ test:
 
 c:
 	docker-compose exec dotfiles-test bash
+
+down:
+	docker-compose down --rmi all --volumes --remove-orphans
+
