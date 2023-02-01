@@ -23,9 +23,6 @@ mkdir ~/.config
 touch ~/.config/fish/config.fish
 echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
 echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
-
-echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
-echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
 echo "pyenv init - | source" >> ~/.config/fish/config.fish
 source ~/.config/config.fish
 pyenv install 3.10
