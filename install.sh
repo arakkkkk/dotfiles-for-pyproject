@@ -20,13 +20,13 @@ fish
 # Install python
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 mkdir ~/.config
-touch ~/.config/config.fish
-echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/config.fish
-echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/config.fish
+touch ~/.config/fish/config.fish
+echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
+echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
 
-echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/config.fish
-echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/config.fish
-echo "pyenv init - | source" >> ~/.config/config.fish
+echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
+echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
+echo "pyenv init - | source" >> ~/.config/fish/config.fish
 source ~/.config/config.fish
 pyenv install 3.10
 pyenv global 3.10
@@ -39,6 +39,6 @@ fisher install jethrokuan/z
 fisher install jethrokuan/fzf
 
 # install starship
-echo "starship init fish | source" >> ~/.config/config.fish
+echo "starship init fish | source" >> ~/.config/fish/config.fish
 curl -sS https://starship.rs/install.sh | sh
 source ~/.config/config.fish
