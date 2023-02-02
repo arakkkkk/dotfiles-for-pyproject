@@ -31,7 +31,7 @@ echo 'eval "$(pyenv init -)"' >> ~/.bashrc
 
 # install starship
 curl -sS https://starship.rs/install.sh | sh
-echo 'eval "$(starship init bash)"' >> ~/.config/fish/config.fish
+echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
 # for fish
 eval "fish"
