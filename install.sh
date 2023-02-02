@@ -19,6 +19,7 @@ sudo apt install -y \
 # Install python
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 mkdir ~/.config
+mkdir ~/.config/fish
 touch ~/.config/fish/config.fish
 echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
 echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
