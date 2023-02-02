@@ -23,6 +23,9 @@ touch ~/.config/fish/config.fish
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+eval ". ~/.bashrc"
+
+pyenv install 3.10
 # Install poetry
 # curl -sSL https://install.python-poetry.org | python3 -
 
@@ -34,10 +37,7 @@ curl -sS https://starship.rs/install.sh | sh
 echo 'eval "$(starship init bash)"' >> ~/.bashrc
 
 # for fish
-eval "fish"
 echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
 echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
 echo "pyenv init - | source" >> ~/.config/fish/config.fish
 echo "starship init fish | source" >> ~/.config/fish/config.fish
-
-eval "source ~/.config/fish/config.fish"
