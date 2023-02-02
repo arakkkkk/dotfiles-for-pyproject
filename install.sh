@@ -4,16 +4,16 @@ sudo apt install -y \
   entr \
   fish \
   git \
-  xdotool \
-  build-essential \
-  libffi-dev \
-  libssl-dev \
-  zlib1g-dev \
-  liblzma-dev \
-  libbz2-dev \
-  libreadline-dev \
-  libsqlite3-dev \
-  libopencv-dev
+  xdotool
+  # build-essential \
+  # libffi-dev \
+  # libssl-dev \
+  # zlib1g-dev \
+  # liblzma-dev \
+  # libbz2-dev \
+  # libreadline-dev \
+  # libsqlite3-dev \
+  # libopencv-dev
   # tk-dev
 
 # Install python
