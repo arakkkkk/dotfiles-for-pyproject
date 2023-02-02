@@ -24,11 +24,15 @@ touch ~/.config/fish/config.fish
 echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
 echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
 echo "pyenv init - | source" >> ~/.config/fish/config.fish
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+
 # Install poetry
-curl -sSL https://install.python-poetry.org | python -
+# curl -sSL https://install.python-poetry.org | python -
 
 # Install fish config
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+# curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
 # install starship
 echo "starship init fish | source" >> ~/.config/fish/config.fish
