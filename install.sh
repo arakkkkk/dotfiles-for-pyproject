@@ -18,25 +18,27 @@ sudo apt install -y \
 
 # Install python
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-mkdir -p ~/.config/fish
-touch ~/.config/fish/config.fish
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
-echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-eval "source ~/.bashrc"
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+eval "source ~/.bash_profile"
 
 pyenv install 3.10
+pyenv global 3.10
 # Install poetry
-# curl -sSL https://install.python-poetry.org | python3 -
+curl -sSL https://install.python-poetry.org | python3 -
 
 # Install fish config
-# curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 
 # install starship
 curl -sS https://starship.rs/install.sh | sh
-echo 'eval "$(starship init bash)"' >> ~/.bashrc
+echo 'eval "$(starship init bash)"' >> ~/.bash_profile
+eval "source ~/.bash_profile"
 
 # for fish
+mkdir -p ~/.config/fish
+touch ~/.config/fish/config.fish
 echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
 echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
 echo "pyenv init - | source" >> ~/.config/fish/config.fish
