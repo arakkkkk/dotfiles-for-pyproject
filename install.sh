@@ -5,6 +5,7 @@ sudo apt install -y \
   fish \
   git \
   xdotool \
+  mysql \
   build-essential \
   libffi-dev \
   libssl-dev \
