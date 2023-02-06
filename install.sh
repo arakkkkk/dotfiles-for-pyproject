@@ -43,3 +43,5 @@ echo "set -x PYENV_ROOT $HOME/.pyenv" >> ~/.config/fish/config.fish
 echo "set -x PATH  $PYENV_ROOT/bin $PATH" >> ~/.config/fish/config.fish
 echo "pyenv init - | source" >> ~/.config/fish/config.fish
 echo "starship init fish | source" >> ~/.config/fish/config.fish
+
+# chsh -s $(which fish)
