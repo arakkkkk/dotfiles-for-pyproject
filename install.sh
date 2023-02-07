@@ -7,6 +7,7 @@ sudo apt install -y \
   fish \
   git \
   xdotool \
+  python3-poetry \
   mysql-server \
   mysql-client \
   build-essential \
