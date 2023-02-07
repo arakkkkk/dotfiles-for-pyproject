@@ -8,6 +8,7 @@ sudo apt install -y \
   git \
   xdotool \
   python3-poetry \
+  python3-cachecontrol \
   mysql-server \
   mysql-client \
   build-essential \
